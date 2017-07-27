@@ -1,0 +1,68 @@
+@charset "utf-8";
+p,ul,li,a,span{
+	margin: 0;
+	padding: 0;
+}
+.icons-move{
+	background: url(icons-move.png) no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -5px -2px;
+    vertical-align: -7px;
+}
+.mine_con li{
+	position: relative;
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #e5e8ea;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #3e4956;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+        user-select:none;
+}
+.mine_con li span{
+	position: absolute;
+	right: 44px;
+	color: #6d7c87;
+	visibility: hidden;
+	/*opacity: 0;
+	transition: opacity ease .3s;*/
+}
+.mine_con li:hover{
+	background-color: #dae7f3;
+}
+.mine_con li:hover span{
+	visibility: visible;
+	/*opacity: 1;*/
+}
+.mine_con li:hover i{
+	background-position: -27px -2px;
+}
+.background{
+	background-color: #dae7f3;
+}
+.mine_con a{
+	width: 20px;
+	height: 38px;
+	float: right;
+	margin-right: 14px;
+}
+.mine_con .drag-a,.mine_con .drag-a i{
+	cursor: move;
+}
+.mine_con .drag-a .crm-btn-arrow{
+	padding:2px;
+	vertical-align: -7px;
+}
+.mine_con p{
+	margin-left: 10px;
+	display: inline-block;
+}
+.mine_con_ul{
+	/*display: none;*/
+}
